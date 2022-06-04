@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root{
+    --pixel-size:6;
+    /*variable that will be used to control the size of the pixel art*/
+}
+
+html{
+/*This sets out the style for the main body*/
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+
+.Character{
+    width: calc(32px * var(--pixel-size));
+    height: calc(32px * var(--pixel-size));
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    /*This section places the panda in the bottom part of the website and also brings the pixel art to size */
+}
+
+.Panda{
+    font-size: 13px;
+    font-family: 'VT323', monospace;
+    color: white;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    /*This section sets style rules for the text and transition*/
+}
+
+.Moon{
+    font-size: 15px;
+    font-family: 'VT323', monospace;
+    color: #a2a0a9;
+    position: absolute;
+    top: 10%;
+    left: 34%;
+     /*This section sets style rules for the text and transition*/
+    
+    
+}
+
+.Character_spriteSheet{
+    animation: moveSpritesheet 1.3s steps(3) infinite;
+    width: calc(96px * var(--pixel-size));
+}
+
+.PixelArt{
+    image-rendering: pixelated;
+}
+
+@keyframes moveSpritesheet {
+    from 
+    {
+        transform: translate3d(0px,0,0)
+    }
+    to{
+        transform: translate3d(-100%,0,0)
+    }
+}

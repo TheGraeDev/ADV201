@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html{
+/*This sets out the style for the main body*/
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.moon{/*This section sets the title in a specific part of the page and sets the font and colour*/
+    font-size: 200px;
+    font-family: 'VT323', monospace;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.start{/*This section sets the title in a specific part of the page and sets the font and colour*/
+    font-size: 60px;
+    font-family: 'VT323', monospace;
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+/*These sections controls the colour of the link that was setup to page 1. I did this to maintain a certain style through the initial page. I might change it showcase an animation*/
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+a:active{
+    color: white;
+    text-decoration: none;
+}
+
